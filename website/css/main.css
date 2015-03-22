@@ -35,40 +35,56 @@ width : 700px;
 #drop-target-one {
 	border: 5px dashed #D9D9D9;
 	color: black;
+	font-family: 'sketchy';
 	border-radius: 10px;
 	padding: 5em 2em;
 	text-align: center;
+	position: absolute;
+	z-index: 1;
+	width: 440px;
 }
 
 #drop-target-two {
 	border: 5px dashed #D9D9D9;
 	color: black;
+	font-family: 'sketchy';
 	border-radius: 10px;
 	padding: 5em 2em;
 	text-align: center;
+	position: absolute;
+	z-index: 1;
+	width: 435px;
 }
 
 
 #drop-target-three {
 	border: 5px dashed #D9D9D9;
 	color: black;
+	font-family: 'sketchy';
 	border-radius: 10px;
 	padding: 5em 2em;
 	text-align: center;
+	position: absolute;
+	z-index: 1;
+	width: 430px;
 }
 
 
 #drop-target-four {
 	border: 5px dashed #D9D9D9;
 	color: black;
+	font-family: 'sketchy';
 	border-radius: 10px;
 	padding: 5em 2em;
 	text-align: center;
+	position: absolute;
+	z-index: 1;
+	width: 435px;
 }
 
 
 .over {
-	background: #F7F7F7;
+	background: #000000;
 }
 
 #drag-elements {
@@ -85,6 +101,15 @@ width : 700px;
 	background: #F7F7F7;
 	border-radius: 3px;
 	color: black;
+}
+
+@font-face {
+	font-family: 'sketchy';
+	src: url('sketchy.ttf');
+}
+
+.sketchy{
+	font-family: 'sketchy';
 }
 
 

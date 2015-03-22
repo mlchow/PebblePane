@@ -55,6 +55,8 @@ window.onload = function() {
   	if (e.stopPropagation) e.stopPropagation(); 
 
 		this.innerHTML = e.dataTransfer.getData('text');
+		var random_color = "#" + Math.floor(Math.random()*16777215).toString(16);
+		$(this).css("background", random_color);
 
 		// Remove the element from the list.
 		elementDragged = null;
@@ -86,9 +88,11 @@ window.onload = function() {
 	// Event Listener for when the dragged element dropped in the drop zone.
 	dropZoneTwo.addEventListener('drop', function(e) {
 		if (e.preventDefault) e.preventDefault(); 
-  	if (e.stopPropagation) e.stopPropagation(); 
+  		if (e.stopPropagation) e.stopPropagation(); 
 
 		this.innerHTML = e.dataTransfer.getData('text');
+		var random_color = "#" + Math.floor(Math.random()*16777215).toString(16);
+		$(this).css("background", random_color);
 
 		// Remove the element from the list.
 		elementDragged = null;
@@ -123,6 +127,8 @@ window.onload = function() {
   	if (e.stopPropagation) e.stopPropagation(); 
 
 		this.innerHTML = e.dataTransfer.getData('text');
+		var random_color = "#" + Math.floor(Math.random()*16777215).toString(16);
+		$(this).css("background", random_color);
 
 		// Remove the element from the list.
 		elementDragged = null;
@@ -154,9 +160,11 @@ window.onload = function() {
 	// Event Listener for when the dragged element dropped in the drop zone.
 	dropZoneFour.addEventListener('drop', function(e) {
 		if (e.preventDefault) e.preventDefault(); 
-  	if (e.stopPropagation) e.stopPropagation(); 
+  		if (e.stopPropagation) e.stopPropagation(); 
 
 		this.innerHTML = e.dataTransfer.getData('text');
+		var random_color = "#" + Math.floor(Math.random()*16777215).toString(16);
+		$(this).css("background", random_color);
 
 		// Remove the element from the list.
 		elementDragged = null;
