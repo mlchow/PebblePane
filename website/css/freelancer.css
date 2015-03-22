@@ -1,0 +1,35 @@
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #18bc9c;
+}
+
+
+body {
+    margin-left: 200px;
+    margin-top: 100px;
+    text-align: left;
+    color: #fff;
+    background: #18bc9c;
+}
+
+.controls {
+    color: black;
+}
