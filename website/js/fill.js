@@ -1,37 +1,58 @@
+
+var num = 2;
+
 $("#1").hide();
 $("#2").hide();
 $("#3").hide();
 $("#4").hide();
-$("#drop-target-one").hide();
-$("#drop-target-two").hide();
+$("#3_pic").hide();
+$("#4_pic").hide();
 $("#drop-target-three").hide();
 $("#drop-target-four").hide();
 
+$('#formid').on("keyup keypress", function(e) {
+  var code = e.keyCode || e.which; 
+  if (code  == 13) {               
+    e.preventDefault();
+    return false;
+  }
+});
+
 var numChoices = function() {
-	var value = $('#numApps input:checked').val();
-	console.log(value);
+	num = $('#numApps input:checked').val();
+	
+	
 	$("#3").hide();
 	$("#4").hide();
 	$("#drop-target-three").hide();
 	$("#drop-target-four").hide();
 
-	if (value == 2)	 {
+	if (num == 2)	 {
+		$("#2_pic").show();
+		$("#3_pic").hide();
+		$("#4_pic").hide();
 	}
 
-	if (value == 3)	 {
+	if (num == 3)	 {
+		$("#2_pic").hide();
+		$("#3_pic").show();
+		$("#4_pic").hide();
+		$("#drop-target-three").show();
 		if ($("#C").val() != "") {
-			$("#drop-target-three").show();
 			$("#3").show();
 		}
 	}
 
-	if (value == 4)	 {
+	else	 {
+		$("#2_pic").hide();
+		$("#3_pic").hide();
+		$("#4_pic").show();
+		$("#drop-target-four").show();
+		$("#drop-target-three").show();
 		if ($("#C").val() != "") {
-			$("#drop-target-three").show();
 			$("#3").show();
 		}
 		if ($("#D").val() != "") {
-			$("#drop-target-four").show();
 			$("#4").show();
 		}
 		
@@ -44,39 +65,39 @@ $("input[type=radio]").on("click", numChoices);
 $("#A").focusout(function() {
 	$("#1").show(); 
 	$("#1").text($("#A").val());
-	$("#drop-target-one").show();
+	
 	if ($("#A").val() == "") {
 		$("#1").hide();
-		$("#drop-target-one").hide();
+	
 	}
 });
 
 $("#B").focusout(function() {
 	$("#2").show();
 	$("#2").text($("#B").val());
-	$("#drop-target-two").show();	
+	
 	if ($("#B").val() == "") {
 		$("#2").hide();
-		$("#drop-target-two").hide();	
+	
 	}
 });
 
 $("#C").focusout(function() {
 	$("#3").show();
 	$("#3").text($("#C").val());
-	$("#drop-target-three").show();
+	
 	if ($("#C").val() == "") {
 		$("#3").hide();
-		$("#drop-target-three").hide();
+	
 	}
 });
 
 $("#D").focusout(function() {
 	$("#4").show();
 	$("#4").text($("#D").val());
-	$("#drop-target-four").show();
+	
 	if ($("#D").val() == "") {
 		$("#4").hide();
-		$("#drop-target-four").hide();
+	
 	}
 });

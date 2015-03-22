@@ -7,6 +7,22 @@
 }
 
 
+#left {
+float : left;
+clear : none;
+height : 600px;
+width : 200px;
+}
+
+#right {
+float : left;
+clear : none;
+height : 600px;
+width : 700px;
+}
+
+
+
 /* Layout */
 .container {
 	max-width: 960px;
