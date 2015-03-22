@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pebble Pane - Custom Pane-ter</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+  <div id="left">
+
+        <form class="form-horizontal">
+        <fieldset>
+
+        <!-- Multiple Radios (inline) -->
+        <div class="control-group">
+          <label class="control-label" for="num">Number of Apps:</label>
+          <div id= "numApps" class="controls">
+            <label class="radio-inline" for="num-2">
+              <input type="radio" name="num" id="num-2" value="2" checked="checked">
+              2
+            </label>
+            <label class="radio-inline" for="num-3">
+              <input type="radio" name="num" id="num-3" value="3">
+              3
+            </label>
+            <label class="radio-inline" for="num-4">
+              <input type="radio" name="num" id="num-4" value="4">
+              4
+            </label>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div id="dd-elements" class="clearfix">
+            <ul id="drag-elements">
+                <div class="control-group">
+                  <label class="control-label" for="A">A</label>
+                  <div class="controls">
+                    <input id="A" name="A" type="text" placeholder="e.g. Chrome" class="input-xlarge">
+                  </div>
+                </div>
+                <li id="1" draggable="true">Element One</li>
+                <!-- Text input-->
+                <div class="control-group">
+                  <label class="control-label" for="B">B</label>
+                  <div class="controls">
+                    <input id="B" name="B" type="text" placeholder="e.g. Terminal" class="input-xlarge">
+                  </div>
+                </div>
+                <li id="2" draggable="true">Element Two</li>
+
+                <!-- Text input-->
+                <div class="control-group">
+                  <label class="control-label" for="C">C</label>
+                  <div class="controls">
+                    <input id="C" name="C" type="text" placeholder="e.g. TextEdit" class="input-xlarge">
+                  </div>
+                </div>
+                <li id="3" draggable="true">Element Three</li>
+
+                <!-- Text input-->
+                <div class="control-group">
+                  <label class="control-label" for="D">D</label>
+                  <div class="controls">
+                    <input id="D" name="D" type="text" placeholder="e.g. iTunes" class="input-xlarge">
+                    
+                  </div>
+                </div>
+                <li id="4" draggable="true">Element Four</li>
+            </ul>
+
+        </div>
+        
+
+        <!-- Button -->
+        <div class="control-group">
+          <label class="control-label" for="downloat_btn"></label>
+          <div class="controls">
+            <button id="downloat_btn" name="downloat_btn" class="btn btn-primary">Download</button>
+          </div>
+        </div>
+
+        </fieldset>
+    </form>
+  </div>
+  <div id ="right">
+    <div id="drop-target-one" class="drop-target">
+        Drop an App Here!
+    </div>
+    <div id="drop-target-two" class="drop-target">
+        Drop an App Here!
+    </div>
+
+    <div id="drop-target-three" class="drop-target">
+        Drop an App Here!
+    </div>
+
+    <div id="drop-target-four" class="drop-target">
+        Drop an App Here!
+    </div>
+    <br style="clear:both;"/>
+  </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/demo.js"></script>
+    <script src="js/fill.js"></script>
+
+</body>
+
+</html>
